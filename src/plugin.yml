@@ -1,0 +1,10 @@
+name: PlayerBlockCounter
+version: 1.0.0
+author: PMLefra
+main: fr.zcraft.PlayerBlockCounter.Main
+api-version: 1.19
+
+commands:
+  blockstats:
+    description: Displays the number of blocks the player has broken and placed.
+    usage: /blockstats
