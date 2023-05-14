@@ -29,7 +29,6 @@ public class SaveDataTask extends BukkitRunnable
         String statsJSONString = plugin.getStatsJSONString() + "\n";
 
         File dir = plugin.getDataFolder();
-        String dirPath = dir.getAbsolutePath();
         File statsFile = new File(dir, statsFileName);
         String statsFilePath = statsFile.getAbsolutePath();
 

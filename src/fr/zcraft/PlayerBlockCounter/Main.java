@@ -1,7 +1,5 @@
 package fr.zcraft.PlayerBlockCounter;
 
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.json.JSONObject;
@@ -119,6 +117,6 @@ public class Main extends JavaPlugin {
                 int count = placeJSON.getInt(playerUUIDString);
                 playerPlaceCountMap.put(UUID.fromString(playerUUIDString), count);
             }
-        } catch (IOException ignored) {};
+        } catch (IOException ignored) {}
     }
 }

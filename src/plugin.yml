@@ -1,5 +1,5 @@
 name: PlayerBlockCounter
-version: 1.0.0
+version: 1.0.1
 author: PMLefra
 main: fr.zcraft.PlayerBlockCounter.Main
 api-version: 1.19
