@@ -31,6 +31,11 @@ public class Main extends JavaPlugin {
         saveDataTask.runTaskTimerAsynchronously(this, 20L * 60L, 20L * 60L);
     }
 
+    @Override
+    public void onDisable() {
+        new SaveDataTask(this).run();
+    }
+
     private final ConcurrentHashMap<UUID, Integer> playerBreakCountMap = new ConcurrentHashMap<>();
     private final  ConcurrentHashMap<UUID, Integer> playerPlaceCountMap = new ConcurrentHashMap<>();
 
